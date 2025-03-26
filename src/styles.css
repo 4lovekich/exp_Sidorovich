@@ -14,58 +14,109 @@ body {
 
 
 header {
-  background-color: #EBF0F2;  
+  width: 100%;
+  background-color: #EBF0F2;
   padding: 10px 20px;
+  box-sizing: border-box;
 }
 
-.logo {
-  weight: 70px;
+/* Контейнер header: розташовуємо по горизонталі */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Ліва зона: логотип і назва */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container .logo {
   height: 70px;
 }
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-.header-top h1 {
+.store-name {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 28px;
-  color:#000
-  
+  color: #000;
+  margin: 0;
+  white-space: nowrap;
 }
 
-.user-actions button {
-  background-color: #444;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  margin-left: 10px;
-  cursor: pointer;
-  border-radius: 4px;
+/* Центральна зона: пошуковий блок */
+.header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .search-container {
-  margin-top: 10px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
 }
 
-.search-container input[type="text"] {
-  padding: 8px;
-  width: 50%;
-  max-width: 400px;
+.search-input {
+  padding: 10px;
+  flex: 1;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 10px 16px;
+  background-color: #000; /* Чорна кнопка */
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Права зона: кнопки користувача */
+.header-right .user-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 10px 16px;
   border: none;
   border-radius: 4px;
-}
-
-.search-container button {
-  padding: 8px 12px;
-  margin-left: 5px;
-  border: none;
-  cursor: pointer;
   background-color: #444;
   color: #fff;
-  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Кнопка налаштувань – оформлена як закруглена */
+.settings-btn {
+  background-color: #444;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* робить кнопку круглою */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.settings-btn:hover {
+  background-color: #333;
+}
+
+.settings-icon {
+  width: 20px;
+  height: 20px;
 }
 
 

@@ -9,22 +9,37 @@
 <body>
   
   <header>
-    <div class="header-top">
-      
-      <div class="logo-container">
-        <img src="img/logo.jpg" alt="Logo" class="logo">
+    <div class="header-container">
+      <!-- Ліва зона: логотип та назва магазину -->
+      <div class="header-left">
+        <div class="logo-container">
+          <img src="img/logo.jpg" alt="Logo" class="logo">
+        </div>
+        <h1 class="store-name">SIDOROVICH STORE</h1>
       </div>
-      <h1>SIDOROVICH STORE</h1>
-      <div class="user-actions">
-        <button class="login-btn">Log In</button>
-        <button class="signup-btn">Sign Up</button>
+  
+      <!-- Центральна зона: пошук -->
+      <div class="header-center">
+        <div class="search-container">
+          <input type="text" placeholder="I want to find..." class="search-input">
+          <button class="search-btn">SEARCH</button>
+        </div>
       </div>
-    </div>
-    <div class="search-container">
-      <input type="text" placeholder="Search for products...">
-      <button class="search-btn">Search</button>
+  
+      <!-- Права зона: кнопки користувача -->
+      <div class="header-right">
+        <div class="user-actions">
+          <button class="login-btn">Log In</button>
+          <button class="signup-btn">Sign Up</button>
+          <!-- Закруглена кнопка налаштувань -->
+          <button class="settings-btn">
+            <img src="img/settings-icon.png" alt="Settings" class="settings-icon">
+          </button>
+        </div>
+      </div>
     </div>
   </header>
+  
   
   
   <div class="container">
