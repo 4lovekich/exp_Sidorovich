@@ -18,6 +18,10 @@ header {
   padding: 10px 20px;
 }
 
+.logo {
+  weight: 70px;
+  height: 70px;
+}
 .header-top {
   display: flex;
   justify-content: space-between;
