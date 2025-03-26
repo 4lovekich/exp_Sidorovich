@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +14,7 @@ body {
 
 
 header {
-  background-color: #222;  
+  background-color: #EBF0F2;  
   padding: 10px 20px;
 }
 
@@ -23,7 +25,10 @@ header {
 }
 
 .header-top h1 {
+  font-family: 'Julius Sans One', sans-serif;
   font-size: 28px;
+  color:#000
+  
 }
 
 .user-actions button {
