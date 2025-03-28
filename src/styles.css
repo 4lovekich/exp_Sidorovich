@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Inria Sans', sans-serif;
-  background-color: #000;  
+  background-color: rgb(4, 12, 27);  
   color: #fff;             
 }
 
@@ -145,22 +145,45 @@ header {
 
 
 .sidebar {
-  width: 200px;
-  background-color: #111;
-  padding: 20px;
+  width: 250px;              /* Для зміни розіру меню фільтрів*/
+  background-color: rgb(4, 12, 27);    
+  border-right: 2px solid #fff; 
+  box-sizing: border-box;
 }
 
 .sidebar ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar li {
-  margin-bottom: 15px;
+  border-bottom: 1px solid #fff; /* Лінія між фільтрами */
+}
+
+.sidebar li:last-child {
+  border-bottom: none;          
 }
 
 .sidebar li a {
+  display: flex;                
+  align-items: center;          
+  gap: 10px;                    /* Дистанція між іконкою та назвою фільтра */
   color: #fff;
   text-decoration: none;
+  padding: 20px 20px;           /* Контролювати відступи */
+  font-size: 16px;
+  white-space: nowrap;          
+}
+
+.sidebar-icon {
+  width: 24px;    
+  height: 24px;   
+}
+
+
+.sidebar li a:hover {
+  background-color: rgb(68, 34, 34);
 }
 
 
