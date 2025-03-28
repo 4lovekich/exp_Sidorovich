@@ -204,8 +204,8 @@ main {
 
 .product-card {
   background-color: #EBF0F2; /* Колір картки продукту */
-  border-radius: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тінь */
   padding: 10px;
   box-sizing: border-box;
   min-height: 280px;
@@ -217,17 +217,15 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 5px;
 }
 
 /* Назва продукту, розташована під зображенням */
 .product-title {
-  font-size: 16px;
+  font-size: 20px;
   color: #000;
   margin: 10px 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
 }
 
 /* Блок внизу, який містить ціну (зліва) та кнопку кошика (справа) */
@@ -238,14 +236,13 @@ main {
   align-items: center;
 }
 
-/* Ціна продукту */
 .product-price {
-  font-size: 18px;
+  font-size: 25px;
+  font-weight: bold;
   color: red;
   margin: 0;
 }
 
-/* Кнопка "додати в кошик" */
 .cart-btn {
   background-color: transparent;
   border: none;
@@ -255,8 +252,8 @@ main {
 
 /* Іконка кошика */
 .cart-icon {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
 }
 
 
