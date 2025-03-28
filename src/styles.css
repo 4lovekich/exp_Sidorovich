@@ -203,14 +203,18 @@ main {
 }
 
 .product-card {
-  background-color: #EBF0F2; /* Колір картки продукту */
+  background-color: #EBF0F2;
   border-radius: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тінь */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 10px;
   box-sizing: border-box;
   min-height: 280px;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
 }
 
 .product-img {
