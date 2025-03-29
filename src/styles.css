@@ -276,7 +276,7 @@ footer {
 
 
 .footer-left {
-  /* Можна додати margin */
+  margin-left: 70px;               
 }
 
 .github-btn {
@@ -284,14 +284,14 @@ footer {
 }
 
 .github-icon {
-  width: 32px;   
-  height: 32px;
+  width: 60px;   
+  height: 60px;
 }
 
 .footer-links a {
   color: rgb(1, 64, 46);           
   text-decoration: none;
-  margin: 0 40px;           /* Дистанція між посиланнями */
+  margin: 0 180px;        /* Дистанція між посиланнями */
   font-size: 25px;
   font-weight: bold;
 }
