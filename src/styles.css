@@ -262,19 +262,54 @@ main {
 
 
 footer {
-  background-color: #222;
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
+  background-color: #EBF0F2;          
+  border-top: 2px solid #fff;        
+  padding: 15px 20px;
+  box-sizing: border-box;
 }
 
-.footer-links {
-  margin-bottom: 10px;
+.footer-container {
+  display: flex;
+  align-items: center;               
+  justify-content: space-between;    /
+}
+
+
+.footer-left {
+  /* Можна додати margin */
+}
+
+.github-btn {
+  text-decoration: none;  
+}
+
+.github-icon {
+  width: 32px;   
+  height: 32px;
 }
 
 .footer-links a {
-  color: #fff;
+  color: rgb(1, 64, 46);           
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 16px;
+  margin: 0 40px;           /* Дистанція між посиланнями */
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;                
+}
+
+.logo-container .logo {
+  height: 55px;             /
+}
+
+.store-name {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 28px;
+  color: #000;
+  margin: 0;
+  white-space: nowrap;      
 }
